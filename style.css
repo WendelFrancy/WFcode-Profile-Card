@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{margin:0; padding:0; box-sizing: border-box;}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-position: left -20vw top -50vh, right -18vw bottom -55vh;
+    background-repeat: no-repeat;
+    font-family:'Kumbh Sans', sans-serif;
+}
+
+.card {
+    max-width: 50rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.midcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgback {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.imgwendel {
+    position: absolute;
+    margin-top: 5.5rem;
+    border-radius: 3rem;
+    border-style: solid;
+    border-color: hsl(227, 10%, 46%);
+    max-width: 5rem;
+}
+
+.midtext{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.midtext b{ 
+    font-size: 1rem; 
+    color: hsl(227, 10%, 46%); 
+    padding-left: 0.3rem;
+}
+
+.midtext p{
+    color: hsl(227, 10%, 46%);
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+}
+
+.footercard {
+    border-top: 0.1rem solid hsl(227, 10%, 46%, 0.2);
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem;
+}
+
+.footercard div {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footercard h1 {
+    font-size: 1.3rem;
+}
+
+.footercard p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+}
+
+@media screen and (max-width: 37.5rem){
+    body{
+        background-position: left -210vw top -60vh, right -210vw bottom -60vh;
+    }
+
+
+}
+
+
+.attribution { font-size: 11px; text-align: center; padding-top: 1rem; font-weight: 700;}
+.attribution a { color: hsl(228, 45%, 44%); }
